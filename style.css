@@ -87,10 +87,10 @@ body{
     font-size: 64px;
     line-height: 1;
     font-weight: 600;
-    margin: 0px 0 6px 5px;
+    margin: 0px 10px 5px 0px;
 }
 
-.weather-box .temperature span{
+.weather-box .temperature #degree-celsius{
     position: absolute;
     font-size: 24px;
     margin-left: 4px;
