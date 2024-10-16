@@ -1,6 +1,6 @@
 const valueSeach = document.getElementById('valueSearch');
 const search = document.querySelector('.search_box button')
-const temperature = document.querySelector('.temperature');
+const temperature = document.getElementById('temperature');
 const description = document.querySelector('.description');
 const humidity = document.getElementById('humidity');
 const windSpeed = document.getElementById('wind_speed');
@@ -22,7 +22,7 @@ const searchWeather=()=>{
     console.log(data);
     if(data.cod == 200){
       weather.querySelector('img').src = 'https://openweathermap.org/img/wn/'+data.weather[0].icon+'@4x.png';
-      temperature.innerText = data.main.temp+'°C';
+      temperature.innerText = data.main.temp;
       description.innerText = data.weather[0].description;
       humidity.innerText = data.main.humidity;
       windSpeed.innerText = data.wind.speed;
